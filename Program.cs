@@ -10,21 +10,28 @@ namespace Day14DataStuctureProblem
             Console.WriteLine("Welcome to Stack and Queue program:");
             Console.WriteLine("********");
 
-            StackAddLinkedList linkedlist = new StackAddLinkedList();
-            linkedlist.Push(56);
-            linkedlist.Push(30);
-            linkedlist.Push(70);
+            // StackAddLinkedList linkedlist = new StackAddLinkedList();
+            //  linkedlist.Push(56);
+            //linkedlist.Push(30);
+            //linkedlist.Push(70);
 
-            Console.WriteLine("**************************************************");
-            Console.WriteLine("Now the stack contains : ");
+            //Console.WriteLine("**************************************************");
+            //Console.WriteLine("Now the stack contains : ");
+
+            //linkedlist.Display();
+
+            //linkedlist.Peak();
+            //linkedlist.Pop();
+
+            //linkedlist.Display();
+            //linkedlist.Peak();
+
+            QueueLinkedList linkedlist = new QueueLinkedList();
+            linkedlist.Enqueue(56);
+            linkedlist.Enqueue(30);
+            linkedlist.Enqueue(70);
 
             linkedlist.Display();
-
-            linkedlist.Peak();
-            linkedlist.Pop();
-
-            linkedlist.Display();
-            linkedlist.Peak();
 
 
 

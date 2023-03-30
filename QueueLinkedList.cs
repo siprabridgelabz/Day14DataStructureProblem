@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Day14DataStructureProblem
 {
-    public  class QueueLinkedList
+    public class QueueLinkedList
     {
         public Node head = null;
-        public  void Enqueue(int value)
+        public void Enqueue(int value)
         {
             Node node = new Node(value);
             if (this.head == null)
@@ -38,26 +38,19 @@ namespace Day14DataStructureProblem
             }
 
         }
-
-        public void Peak()
+        public void Dequeue()
         {
-            if (this.head == null)
+            if (head == null)
             {
-                Console.WriteLine("Queue seems empty");
+                Console.WriteLine("Queue is empty,Dequeue is not possible.");
                 return;
             }
-            Console.WriteLine("{0} is in the head of the Queue", this.head.data);
-        }
-
-        public  void Pop()
-        {
-            if (this.head == null)
+            while (head != null)
             {
-                Console.WriteLine("Queue has been emptyed, Further Deletion is not possible");
-                return;
+                Console.WriteLine($"Value dequeue is {head.data}");
+                head = head.next;
             }
-            Console.WriteLine("Value popped from the Queue is {0}", this.head.data);
-            this.head = this.head.next;
+
         }
     }
 }

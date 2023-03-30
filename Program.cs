@@ -27,12 +27,23 @@ namespace Day14DataStuctureProblem
             //linkedlist.Peak();
 
             QueueLinkedList linkedlist = new QueueLinkedList();
-            linkedlist.Enqueue(56);
-            linkedlist.Enqueue(30);
-            linkedlist.Enqueue(70);
+           // linkedlist.Enqueue(56);
+           // linkedlist.Enqueue(30);
+           // linkedlist.Enqueue(70);
 
+           // linkedlist.Display();
+
+           // linkedlist.Enqueue(56);
+           // linkedlist.Enqueue(30);
+           // linkedlist.Enqueue(70);
+            Console.WriteLine("*******************************************************");
             linkedlist.Display();
-
+            Console.WriteLine("*******************************************************");
+            linkedlist.Dequeue();
+            Console.WriteLine("*******************************************************");
+            linkedlist.Display();
+            Console.WriteLine("*******************************************************");
+            Console.ReadLine();
 
 
 

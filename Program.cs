@@ -1,4 +1,5 @@
 ﻿using Day14DataStructureProblem;
+using System.Collections.Generic;
 
 namespace Day14DataStuctureProblem
 {
@@ -9,11 +10,15 @@ namespace Day14DataStuctureProblem
             Console.WriteLine("Welcome to Stack and Queue program:");
             Console.WriteLine("********");
 
-            StackAddLinkedList obj = new StackAddLinkedList();
-            obj.push(70);
-            obj.push(30);
-            obj.push(56);
-            obj.Display();
+            StackAddLinkedList linkedlist = new StackAddLinkedList();
+            linkedlist.Push(56);
+            linkedlist.Push(30);
+            linkedlist.Push(70);
+
+            
+
+            linkedlist.Display();
+           
 
         }
     }
